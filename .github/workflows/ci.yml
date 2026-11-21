@@ -34,3 +34,5 @@ jobs:
         pytest-cov
     - name: Test with pytest
       run: pytest
+      env:
+        COVERAGE_FILE: .coverage.${{ matrix.python-version }}.${{ matrix.os }}
